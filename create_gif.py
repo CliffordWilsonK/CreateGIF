@@ -1,8 +1,8 @@
 import imageio.v3 as iio
 
-filenames = ['images/img_1.png', 'images/img_2.png']
+filenames = ['images/group1/img1.png', 'images/group1/img2.png', 'images/group1/img3.png']
 images = []
 for filename in filenames:
     images.append(iio.imread(filename))
 
-iio.imwrite('images/team.gif', images,  duration=500, loop=0)
+iio.imwrite('gif_output/nyancat.gif', images,  duration=500, loop=0)
